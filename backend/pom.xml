@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- =========================================================== -->
+    <!-- PROJECT IDENTITY                                             -->
+    <!-- =========================================================== -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <!--
+            Using Spring Boot 3.x which requires:
+            - Java 17+
+            - Jakarta EE 10 (jakarta.* namespace, NOT javax.*)
+            Be sure all entity imports use jakarta.persistence.*
+        -->
+        <version>3.5.13</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.votingsystem</groupId>
+    <artifactId>secured-super-system</artifactId>
+    <version>1.0.0</version>
+    <name>secured-super-system</name>
+    <description>
+        IAS101 - Information Assurance and Security
+        Enterprise-Grade University Digital Voting Platform
+    </description>
+
+    <!-- =========================================================== -->
+    <!-- JAVA VERSION                                                  -->
+    <!-- =========================================================== -->
+    <properties>
+        <java.version>17</java.version>
+        <!--
+            Pin the JJWT version here so it's easy to upgrade.
+            0.12.x is the latest stable API (uses builder pattern).
+        -->
+        <jjwt.version>0.12.5</jjwt.version>
+    </properties>
+
+    <!-- =========================================================== -->
+    <!-- DEPENDENCIES                                                  -->
+    <!-- =========================================================== -->
+    <dependencies>
+
+    	<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-actuator</artifactId>
+    	</dependency>
+
+
+        <!-- ======================================================= -->
+        <!-- [1] SPRING BOOT WEB — REST API Layer                     -->
+        <!-- Provides: Embedded Tomcat, Spring MVC, Jackson (JSON)    -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [2] SPRING DATA JPA — Data Layer (Subsystem 2 & 3)       -->
+        <!-- Provides: Hibernate ORM, JPA Repositories,               -->
+        <!--           @EnableJpaAuditing support (BaseAuditEntity)    -->
+        <!-- IAS101 Mapping: Audit Trail — @CreatedDate/@LastModified  -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [3] SPRING SECURITY — IAM & RBAC Engine (Subsystem 1)   -->
+        <!-- Provides: SecurityFilterChain, AuthenticationManager,    -->
+        <!--           @PreAuthorize, BCryptPasswordEncoder            -->
+        <!-- IAS101 Mapping: RBAC, JWT Filter, Password Hashing       -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [4] POSTGRESQL DRIVER — Database Connectivity            -->
+        <!-- Provides: JDBC driver for PostgreSQL                     -->
+        <!-- Scope: runtime — not needed at compile time              -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [5] VALIDATION — Input Sanitization Engine (Subsystem 4) -->
+        <!-- Provides: @Valid, @NotBlank, @Pattern (Regex) on DTOs    -->
+        <!-- IAS101 Mapping: Input Validation — prevents SQLi & XSS   -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [6] JAVA MAIL SENDER — Notification & OTP Engine         -->
+        <!-- Provides: JavaMailSender for OTP email dispatch          -->
+        <!-- IAS101 Mapping: 2FA / OTP confirmation flow              -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [7] JJWT API — JWT Token Engine (Subsystem 1 — IAM)     -->
+        <!-- The main JJWT interface/API jar                          -->
+        <!-- IAS101 Mapping: JWT issuance with role claims            -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>${jjwt.version}</version>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [8] JJWT IMPL — JWT Runtime Implementation               -->
+        <!-- The concrete implementation of the JJWT API              -->
+        <!-- Scope: runtime — loaded by the JVM, not compiled against  -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>${jjwt.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [9] JJWT JACKSON — JWT JSON Serialization                -->
+        <!-- Allows JJWT to use Jackson to parse/serialize JWT claims  -->
+        <!-- Scope: runtime — used internally by jjwt-impl             -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>${jjwt.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [10] LOMBOK — Boilerplate Reduction                      -->
+        <!-- Provides: @Data, @Builder, @NoArgsConstructor, etc.      -->
+        <!-- Scope: provided — compile-time annotation processor only  -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [11] JSOUP — Server-Side HTML/XSS Sanitizer             -->
+        <!-- Provides: Jsoup.clean() to strip malicious HTML tags     -->
+        <!-- IAS101 Mapping: Input Sanitization Engine (Anti-XSS)     -->
+        <!-- Used in: InputSanitizationService for platform text,      -->
+        <!--          YouTube URLs, and Q&A submissions                -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.17.2</version>
+        </dependency>
+
+        <!-- ======================================================= -->
+        <!-- [12] SPRING BOOT TEST — Testing Infrastructure           -->
+        <!-- ======================================================= -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- =========================================================== -->
+    <!-- BUILD PLUGINS                                                 -->
+    <!-- =========================================================== -->
+    <build>
+        <plugins>
+
+            <!-- Spring Boot Maven Plugin: packages as executable JAR -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!--
+                        Exclude Lombok from the final packaged JAR.
+                        It's only needed at compile time.
+                    -->
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
