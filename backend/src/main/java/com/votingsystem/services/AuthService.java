@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-@RequiredArgsConstructor
 public class AuthService {
 
     private final UserRepository userRepository;
@@ -25,6 +24,22 @@ public class AuthService {
     private final AuthenticationManager authenticationManager;
     private final OtpService otpService;
     private final AuditLogService auditLogService;
+
+    public AuthService(UserRepository userRepository, 
+                       VoterWhitelistRepository whitelistRepository, 
+                       JwtUtils jwtUtils, 
+                       PasswordEncoder passwordEncoder, 
+                       AuthenticationManager authenticationManager, 
+                       OtpService otpService, 
+                       AuditLogService auditLogService) {
+        this.userRepository = userRepository;
+        this.whitelistRepository = whitelistRepository;
+        this.jwtUtils = jwtUtils;
+        this.passwordEncoder = passwordEncoder;
+        this.authenticationManager = authenticationManager;
+        this.otpService = otpService;
+        this.auditLogService = auditLogService;
+    }
 
     public AuthResponseDto login(String studentId, String password, String clientIp) {
         Authentication auth = authenticationManager.authenticate(
@@ -75,18 +90,15 @@ public class AuthService {
             throw new RuntimeException("Account already exists.");
         }
 
-        User user = User.builder()
-            .studentId(request.getStudentId())
-            .passwordHash(passwordEncoder.encode(request.getPassword()))
-            .role(User.Role.USER)
-            .accountStatus(User.AccountStatus.PENDING)
-            .firstName(request.getFirstName())
-            .lastName(request.getLastName())
-            .birthday(request.getBirthday())
-            .gmail(request.getGmail())
-            //.contactNumber(request.getContactNumber()) // Ensure DTO has this
-            //.address(request.getAddress())
-            .build();
+        User user = new User();
+        user.setStudentId(request.getStudentId());
+        user.setPasswordHash(passwordEncoder.encode(request.getPassword()));
+        user.setRole(User.Role.USER);
+        user.setAccountStatus(User.AccountStatus.PENDING);
+        user.setFirstName(request.getFirstName());
+        user.setLastName(request.getLastName());
+        user.setBirthday(request.getBirthday());
+        user.setGmail(request.getGmail());
 
         userRepository.save(user);
 

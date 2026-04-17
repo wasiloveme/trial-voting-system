@@ -1,0 +1,661 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.votingsystem:secured-super-system >----------------
+[INFO] Building secured-super-system 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.13:run (default-cli) > test-compile @ secured-super-system >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ secured-super-system ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ secured-super-system ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom
+Progress (1): 1.3 kBProgress (1): 2.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.pom (2.4 kB at 1.9 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.pom
+Progress (1): 1.9 kBProgress (1): 3.7 kBProgress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.pom (4.1 kB at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.5.0/plexus-languages-1.5.0.pom
+Progress (1): 1.4 kBProgress (1): 3.3 kBProgress (1): 3.9 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.5.0/plexus-languages-1.5.0.pom (3.9 kB at 48 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/20/plexus-20.pom
+Progress (1): 692 BProgress (1): 1.7 kBProgress (1): 5.2 kBProgress (1): 8.3 kBProgress (1): 9.5 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 24 kBProgress (1): 27 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/20/plexus-20.pom (29 kB at 243 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.4/junit-bom-5.11.4.pom
+Progress (1): 908 BProgress (1): 2.2 kBProgress (1): 5.6 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.11.4/junit-bom-5.11.4.pom (5.6 kB at 68 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom
+Progress (1): 872 BProgress (1): 2.5 kBProgress (1): 5.8 kBProgress (1): 8.9 kBProgress (1): 12 kB Progress (1): 16 kBProgress (1): 18 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.pom (18 kB at 177 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom
+Progress (1): 976 BProgress (1): 3.2 kBProgress (1): 7.2 kBProgress (1): 10 kB Progress (1): 13 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.pom (13 kB at 164 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom
+Progress (1): 814 BProgress (1): 1.9 kBProgress (1): 3.7 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.pom (3.7 kB at 47 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom
+Progress (1): 692 BProgress (1): 1.7 kBProgress (1): 5.3 kBProgress (1): 8.3 kBProgress (1): 9.5 kBProgress (1): 11 kB Progress (1): 15 kBProgress (1): 18 kBProgress (1): 21 kBProgress (1): 25 kBProgress (1): 28 kBProgress (1): 29 kB                   Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/18/plexus-18.pom (29 kB at 340 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar
+Progress (1): 0.9/126 kBProgress (1): 2.3/126 kBProgress (1): 3.6/126 kBProgress (1): 5.0/126 kBProgress (1): 6.4/126 kBProgress (1): 7.7/126 kBProgress (1): 9.1/126 kBProgress (1): 10/126 kB Progress (1): 15/126 kBProgress (1): 16/126 kBProgress (1): 20/126 kBProgress (1): 24/126 kBProgress (1): 28/126 kBProgress (1): 33/126 kBProgress (1): 37/126 kBProgress (1): 41/126 kBProgress (1): 45/126 kBProgress (1): 49/126 kBProgress (1): 54/126 kBProgress (1): 58/126 kBProgress (1): 62/126 kBProgress (1): 66/126 kBProgress (1): 71/126 kBProgress (1): 75/126 kBProgress (1): 79/126 kBProgress (1): 83/126 kBProgress (1): 88/126 kBProgress (1): 92/126 kBProgress (1): 96/126 kBProgress (1): 100/126 kBProgress (1): 104/126 kBProgress (1): 109/126 kBProgress (1): 113/126 kBProgress (1): 117/126 kBProgress (1): 121/126 kBProgress (1): 126/126 kBProgress (1): 126 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.8/asm-9.8.jar (126 kB at 846 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar
+Progress (1): 3.8/353 kBProgress (1): 8.0/353 kBProgress (1): 12/353 kB Progress (1): 16/353 kBProgress (1): 21/353 kBProgress (1): 25/353 kBProgress (1): 29/353 kBProgress (1): 33/353 kBProgress (1): 38/353 kBProgress (1): 42/353 kBProgress (1): 46/353 kBProgress (1): 57/353 kBProgress (1): 73/353 kBProgress (1): 90/353 kBProgress (1): 106/353 kBProgress (1): 122/353 kBProgress (1): 139/353 kBProgress (1): 155/353 kBProgress (1): 172/353 kBProgress (1): 188/353 kBProgress (1): 204/353 kBProgress (1): 221/353 kBProgress (1): 237/353 kBProgress (1): 253/353 kBProgress (1): 270/353 kBProgress (1): 286/353 kBProgress (1): 303/353 kBProgress (1): 319/353 kBProgress (1): 335/353 kBProgress (1): 352/353 kBProgress (1): 353 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.2.0/qdox-2.2.0.jar (353 kB at 1.9 MB/s)
+Progress (1): 0.9/57 kBProgress (1): 2.3/57 kBProgress (1): 3.6/57 kBProgress (2): 3.6/57 kB | 0.9/193 kBProgress (2): 3.6/57 kB | 2.3/193 kBProgress (2): 3.6/57 kB | 3.6/193 kBProgress (2): 3.6/57 kB | 5.0/193 kBProgress (2): 3.6/57 kB | 6.4/193 kBProgress (2): 5.0/57 kB | 6.4/193 kBProgress (2): 6.4/57 kB | 6.4/193 kBProgress (2): 6.4/57 kB | 7.7/193 kBProgress (2): 6.4/57 kB | 9.1/193 kBProgress (2): 6.4/57 kB | 10/193 kB Progress (2): 6.4/57 kB | 12/193 kBProgress (2): 6.4/57 kB | 13/193 kBProgress (2): 7.7/57 kB | 13/193 kBProgress (3): 7.7/57 kB | 13/193 kB | 0.9/94 kBProgress (3): 7.7/57 kB | 13/193 kB | 2.3/94 kBProgress (3): 7.7/57 kB | 15/193 kB | 2.3/94 kBProgress (3): 7.7/57 kB | 15/193 kB | 3.6/94 kBProgress (3): 7.7/57 kB | 16/193 kB | 3.6/94 kBProgress (3): 7.7/57 kB | 16/193 kB | 5.0/94 kBProgress (3): 7.7/57 kB | 16/193 kB | 6.4/94 kBProgress (3): 7.7/57 kB | 17/193 kB | 6.4/94 kBProgress (3): 7.7/57 kB | 17/193 kB | 7.7/94 kBProgress (3): 7.7/57 kB | 19/193 kB | 7.7/94 kBProgress (3): 9.1/57 kB | 19/193 kB | 7.7/94 kBProgress (3): 9.1/57 kB | 19/193 kB | 9.1/94 kBProgress (3): 9.1/57 kB | 20/193 kB | 9.1/94 kBProgress (3): 9.1/57 kB | 20/193 kB | 10/94 kB Progress (3): 9.1/57 kB | 21/193 kB | 10/94 kBProgress (3): 9.1/57 kB | 21/193 kB | 12/94 kBProgress (3): 9.1/57 kB | 23/193 kB | 12/94 kBProgress (3): 10/57 kB | 23/193 kB | 12/94 kB Progress (3): 10/57 kB | 24/193 kB | 12/94 kBProgress (3): 10/57 kB | 24/193 kB | 13/94 kBProgress (3): 10/57 kB | 24/193 kB | 15/94 kBProgress (3): 10/57 kB | 25/193 kB | 15/94 kBProgress (3): 12/57 kB | 25/193 kB | 15/94 kBProgress (3): 12/57 kB | 25/193 kB | 16/94 kBProgress (3): 12/57 kB | 25/193 kB | 17/94 kBProgress (3): 12/57 kB | 25/193 kB | 19/94 kBProgress (3): 12/57 kB | 25/193 kB | 20/94 kBProgress (3): 12/57 kB | 25/193 kB | 21/94 kBProgress (3): 12/57 kB | 25/193 kB | 23/94 kBProgress (3): 12/57 kB | 25/193 kB | 24/94 kBProgress (3): 12/57 kB | 25/193 kB | 26/94 kBProgress (3): 12/57 kB | 27/193 kB | 26/94 kBProgress (3): 12/57 kB | 28/193 kB | 26/94 kBProgress (3): 12/57 kB | 30/193 kB | 26/94 kBProgress (3): 12/57 kB | 31/193 kB | 26/94 kBProgress (3): 12/57 kB | 32/193 kB | 26/94 kBProgress (3): 12/57 kB | 32/193 kB | 27/94 kBProgress (3): 12/57 kB | 32/193 kB | 28/94 kBProgress (3): 12/57 kB | 32/193 kB | 30/94 kBProgress (3): 12/57 kB | 32/193 kB | 31/94 kBProgress (3): 12/57 kB | 32/193 kB | 32/94 kBProgress (3): 12/57 kB | 32/193 kB | 33/94 kBProgress (3): 12/57 kB | 34/193 kB | 33/94 kBProgress (3): 12/57 kB | 34/193 kB | 35/94 kBProgress (3): 13/57 kB | 34/193 kB | 35/94 kBProgress (3): 13/57 kB | 34/193 kB | 36/94 kBProgress (3): 14/57 kB | 34/193 kB | 36/94 kBProgress (3): 16/57 kB | 34/193 kB | 36/94 kBProgress (3): 16/57 kB | 35/193 kB | 36/94 kBProgress (3): 17/57 kB | 35/193 kB | 36/94 kBProgress (3): 17/57 kB | 35/193 kB | 37/94 kBProgress (3): 17/57 kB | 36/193 kB | 37/94 kBProgress (3): 17/57 kB | 36/193 kB | 39/94 kBProgress (3): 17/57 kB | 36/193 kB | 40/94 kBProgress (3): 17/57 kB | 36/193 kB | 42/94 kBProgress (3): 18/57 kB | 36/193 kB | 42/94 kBProgress (3): 18/57 kB | 36/193 kB | 43/94 kBProgress (3): 18/57 kB | 36/193 kB | 44/94 kBProgress (3): 18/57 kB | 36/193 kB | 46/94 kBProgress (3): 18/57 kB | 36/193 kB | 47/94 kBProgress (3): 18/57 kB | 36/193 kB | 48/94 kBProgress (3): 18/57 kB | 36/193 kB | 50/94 kBProgress (3): 18/57 kB | 36/193 kB | 51/94 kBProgress (3): 20/57 kB | 36/193 kB | 51/94 kBProgress (3): 20/57 kB | 36/193 kB | 53/94 kBProgress (3): 20/57 kB | 38/193 kB | 53/94 kBProgress (3): 20/57 kB | 38/193 kB | 54/94 kBProgress (3): 20/57 kB | 38/193 kB | 55/94 kBProgress (3): 20/57 kB | 39/193 kB | 55/94 kBProgress (3): 20/57 kB | 41/193 kB | 55/94 kBProgress (3): 20/57 kB | 41/193 kB | 60/94 kBProgress (3): 20/57 kB | 42/193 kB | 60/94 kBProgress (3): 20/57 kB | 43/193 kB | 60/94 kBProgress (3): 20/57 kB | 45/193 kB | 60/94 kBProgress (3): 20/57 kB | 46/193 kB | 60/94 kBProgress (3): 21/57 kB | 46/193 kB | 60/94 kBProgress (3): 23/57 kB | 46/193 kB | 60/94 kBProgress (3): 24/57 kB | 46/193 kB | 60/94 kBProgress (3): 24/57 kB | 47/193 kB | 60/94 kBProgress (3): 25/57 kB | 47/193 kB | 60/94 kBProgress (3): 25/57 kB | 49/193 kB | 60/94 kBProgress (3): 27/57 kB | 49/193 kB | 60/94 kBProgress (3): 27/57 kB | 50/193 kB | 60/94 kBProgress (3): 27/57 kB | 51/193 kB | 60/94 kBProgress (3): 27/57 kB | 53/193 kB | 60/94 kBProgress (3): 28/57 kB | 53/193 kB | 60/94 kBProgress (3): 28/57 kB | 54/193 kB | 60/94 kBProgress (3): 28/57 kB | 56/193 kB | 60/94 kBProgress (3): 28/57 kB | 56/193 kB | 64/94 kBProgress (3): 28/57 kB | 56/193 kB | 68/94 kBProgress (3): 28/57 kB | 56/193 kB | 72/94 kBProgress (3): 29/57 kB | 56/193 kB | 72/94 kBProgress (3): 31/57 kB | 56/193 kB | 72/94 kBProgress (3): 31/57 kB | 56/193 kB | 76/94 kBProgress (3): 32/57 kB | 56/193 kB | 76/94 kBProgress (3): 32/57 kB | 56/193 kB | 81/94 kBProgress (3): 32/57 kB | 60/193 kB | 81/94 kBProgress (3): 33/57 kB | 60/193 kB | 81/94 kBProgress (3): 35/57 kB | 60/193 kB | 81/94 kBProgress (3): 35/57 kB | 64/193 kB | 81/94 kBProgress (3): 35/57 kB | 68/193 kB | 81/94 kBProgress (3): 36/57 kB | 68/193 kB | 81/94 kBProgress (3): 36/57 kB | 68/193 kB | 85/94 kBProgress (3): 38/57 kB | 68/193 kB | 85/94 kBProgress (3): 39/57 kB | 68/193 kB | 85/94 kBProgress (3): 39/57 kB | 68/193 kB | 89/94 kBProgress (3): 40/57 kB | 68/193 kB | 89/94 kBProgress (3): 40/57 kB | 68/193 kB | 93/94 kBProgress (3): 40/57 kB | 68/193 kB | 94 kB   Progress (3): 42/57 kB | 68/193 kB | 94 kBProgress (3): 43/57 kB | 68/193 kB | 94 kBProgress (3): 43/57 kB | 73/193 kB | 94 kBProgress (3): 44/57 kB | 73/193 kB | 94 kBProgress (3): 44/57 kB | 77/193 kB | 94 kBProgress (3): 46/57 kB | 77/193 kB | 94 kBProgress (3): 46/57 kB | 81/193 kB | 94 kBProgress (3): 47/57 kB | 81/193 kB | 94 kBProgress (3): 49/57 kB | 81/193 kB | 94 kBProgress (3): 50/57 kB | 81/193 kB | 94 kBProgress (3): 50/57 kB | 85/193 kB | 94 kBProgress (3): 51/57 kB | 85/193 kB | 94 kBProgress (3): 53/57 kB | 85/193 kB | 94 kBProgress (3): 53/57 kB | 89/193 kB | 94 kBProgress (3): 54/57 kB | 89/193 kB | 94 kBProgress (3): 55/57 kB | 89/193 kB | 94 kBProgress (3): 55/57 kB | 94/193 kB | 94 kBProgress (3): 57 kB | 94/193 kB | 94 kB   Progress (3): 57 kB | 98/193 kB | 94 kBProgress (3): 57 kB | 102/193 kB | 94 kBProgress (3): 57 kB | 106/193 kB | 94 kBProgress (3): 57 kB | 111/193 kB | 94 kBProgress (3): 57 kB | 115/193 kB | 94 kBProgress (3): 57 kB | 119/193 kB | 94 kBProgress (3): 57 kB | 123/193 kB | 94 kBProgress (3): 57 kB | 127/193 kB | 94 kBProgress (3): 57 kB | 132/193 kB | 94 kBProgress (3): 57 kB | 136/193 kB | 94 kBProgress (3): 57 kB | 140/193 kB | 94 kBProgress (3): 57 kB | 144/193 kB | 94 kBProgress (3): 57 kB | 149/193 kB | 94 kBProgress (3): 57 kB | 153/193 kB | 94 kBProgress (3): 57 kB | 155/193 kB | 94 kBProgress (3): 57 kB | 157/193 kB | 94 kBProgress (3): 57 kB | 161/193 kB | 94 kBProgress (3): 57 kB | 166/193 kB | 94 kBProgress (3): 57 kB | 170/193 kB | 94 kBProgress (3): 57 kB | 174/193 kB | 94 kBProgress (3): 57 kB | 178/193 kB | 94 kBProgress (3): 57 kB | 182/193 kB | 94 kBProgress (3): 57 kB | 187/193 kB | 94 kBProgress (3): 57 kB | 191/193 kB | 94 kBProgress (3): 57 kB | 193 kB | 94 kB                                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.1/plexus-xml-3.0.1.jar (94 kB at 271 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.5.0/plexus-java-1.5.0.jar (57 kB at 162 kB/s)
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.2/plexus-utils-4.0.2.jar (193 kB at 545 kB/s)
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 58 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/config/SecurityConfig.java:[4,33] cannot access com.votingsystem.security.UserDetailsServiceImpl
+  bad source file: E:\code\trial-voting-system\backend\src\main\java\com\votingsystem\security\UserDetailsServiceImpl.java
+    file does not contain class com.votingsystem.security.UserDetailsServiceImpl
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/config/SecurityConfig.java:[35,19] cannot find symbol
+  symbol:   class UserDetailsServiceImpl
+  location: class com.votingsystem.config.SecurityConfig
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[38,30] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[39,36] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[40,38] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/AesAttributeConverter.java:[71,13] cannot find symbol
+  symbol:   variable log
+  location: class com.votingsystem.security.AesAttributeConverter
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/AesAttributeConverter.java:[102,13] cannot find symbol
+  symbol:   variable log
+  location: class com.votingsystem.security.AesAttributeConverter
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[35,59] cannot find symbol
+  symbol:   method getElectionState()
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[36,17] cannot find symbol
+  symbol:   method setElectionState(com.votingsystem.models.ElectionSettings.ElectionState)
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[37,17] cannot find symbol
+  symbol:   method setCountdownEndTime(java.time.LocalDateTime)
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[43,71] cannot find symbol
+  symbol:   method getId()
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[58,31] cannot find symbol
+  symbol:   method getApprovalStatus()
+  location: variable c of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[68,18] cannot find symbol
+  symbol:   method setApprovalStatus(com.votingsystem.models.Candidate.ApprovalStatus)
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[73,70] cannot find symbol
+  symbol:   method getId()
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[86,21] cannot find symbol
+  symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[88,21] cannot find symbol
+  symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[95,65] cannot find symbol
+  symbol:   method getId()
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[109,13] cannot find symbol
+  symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[114,52] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[137,44] cannot find symbol
+  symbol:   method getElectionState()
+  location: class com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuditLogService.java:[34,34] cannot find symbol
+  symbol:   method builder()
+  location: class com.votingsystem.models.AuditLog
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[37,17] cannot find symbol
+  symbol:   method getAccountStatus()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[40,17] cannot find symbol
+  symbol:   method getAccountStatus()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,17] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,31] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,52] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[46,39] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[53,17] cannot find symbol
+  symbol:   method setToken(java.lang.String)
+  location: variable response of type com.votingsystem.dto.AuthResponseDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[54,35] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[55,30] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[61,33] cannot find symbol
+  symbol:   method isRegistered()
+  location: variable entry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[62,20] incompatible types: java.lang.Object cannot be converted to boolean
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[67,84] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[70,27] cannot find symbol
+  symbol:   method isRegistered()
+  location: variable whitelistEntry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[74,53] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[78,25] cannot find symbol
+  symbol:   method builder()
+  location: class com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[79,31] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[80,57] cannot find symbol
+  symbol:   method getPassword()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[83,31] cannot find symbol
+  symbol:   method getFirstName()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[84,30] cannot find symbol
+  symbol:   method getLastName()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[85,30] cannot find symbol
+  symbol:   method getBirthday()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[86,27] cannot find symbol
+  symbol:   method getGmail()
+  location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[93,43] cannot find symbol
+  symbol:   method getGmail()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[101,17] cannot find symbol
+  symbol:   method getAccountStatus()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[105,54] cannot find symbol
+  symbol:   method getGmail()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[108,13] cannot find symbol
+  symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[113,23] cannot find symbol
+  symbol:   method setRegistered(boolean)
+  location: variable whitelistEntry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,17] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,31] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,52] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[118,46] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[128,43] cannot find symbol
+  symbol:   method getGmail()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[136,54] cannot find symbol
+  symbol:   method getGmail()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[143,13] cannot find symbol
+  symbol:   method setPasswordHash(java.lang.String)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,17] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,31] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,52] cannot find symbol
+  symbol:   method getRole()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[148,43] cannot find symbol
+  symbol:   method getId()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[31,13] cannot find symbol
+  symbol:   method setOtpCode(java.lang.String)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[32,13] cannot find symbol
+  symbol:   method setOtpExpiry(java.time.LocalDateTime)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[35,26] cannot find symbol
+  symbol:   method getGmail()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[43,17] cannot find symbol
+  symbol:   method getOtpCode()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[43,46] cannot find symbol
+  symbol:   method getOtpExpiry()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[47,45] cannot find symbol
+  symbol:   method getOtpExpiry()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[51,31] cannot find symbol
+  symbol:   method getOtpCode()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[53,17] cannot find symbol
+  symbol:   method setOtpCode(<nulltype>)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[54,17] cannot find symbol
+  symbol:   method setOtpExpiry(<nulltype>)
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[44,21] cannot find symbol
+  symbol:   method getElectionState()
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[51,79] cannot find symbol
+  symbol:   method getPlatformText()
+  location: variable platformDto of type com.votingsystem.dto.CandidateProfileUpdateDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[53,77] cannot find symbol
+  symbol:   method getYoutubeEmbedUrl()
+  location: variable platformDto of type com.votingsystem.dto.CandidateProfileUpdateDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[54,18] cannot find symbol
+  symbol:   method setYoutubeEmbedUrl(java.lang.String)
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[55,18] cannot find symbol
+  symbol:   method setApprovalStatus(com.votingsystem.models.Candidate.ApprovalStatus)
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[61,68] cannot find symbol
+  symbol:   method getId()
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[72,22] cannot find symbol
+  symbol:   method getCandidate()
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[76,17] cannot find symbol
+  symbol:   method setAnswerText(java.lang.String)
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[77,17] cannot find symbol
+  symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[83,67] cannot find symbol
+  symbol:   method getId()
+  location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[53,12] cannot find symbol
+  symbol:   method setReceiptHash(java.lang.String)
+  location: variable dto of type com.votingsystem.dto.ReceiptVerificationDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[61,20] cannot find symbol
+  symbol:   method getAccountStatus()
+  location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[70,21] cannot find symbol
+  symbol:   method getElectionState()
+  location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[77,18] cannot find symbol
+  symbol:   method getAccountStatus()
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[81,38] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[84,42] cannot find symbol
+  symbol:   method getSelectedCandidateIds()
+  location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[89,17] cannot find symbol
+  symbol:   method setVoter(com.votingsystem.models.User)
+  location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[90,17] cannot find symbol
+  symbol:   method setCandidate(com.votingsystem.models.Candidate)
+  location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[91,39] cannot find symbol
+  symbol:   method getPosition()
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[92,17] cannot find symbol
+  symbol:   method setReceiptHash(java.lang.String)
+  location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[93,17] cannot find symbol
+  symbol:   method setIsAbstain(boolean)
+  location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[96,45] cannot find symbol
+  symbol:   method getVoteCount()
+  location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[100,22] cannot find symbol
+  symbol:   method getAbstainedPositions()
+  location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[101,45] cannot find symbol
+  symbol:   method getAbstainedPositions()
+  location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[103,28] cannot find symbol
+  symbol:   method setVoter(com.votingsystem.models.User)
+  location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[104,28] cannot find symbol
+  symbol:   method setPosition(java.lang.String)
+  location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[105,28] cannot find symbol
+  symbol:   method setIsAbstain(boolean)
+  location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[106,28] cannot find symbol
+  symbol:   method setReceiptHash(java.lang.String)
+  location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[111,14] cannot find symbol
+  symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,22] cannot find symbol
+  symbol:   method getId()
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,37] cannot find symbol
+  symbol:   method getStudentId()
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,59] cannot find symbol
+  symbol:   method getRole()
+  location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[121,19] cannot find symbol
+  symbol:   method setReceiptHash(java.lang.String)
+  location: variable receiptDto of type com.votingsystem.dto.VoteReceiptDto
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.621 s
+[INFO] Finished at: 2026-04-17T21:01:58+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project secured-super-system: Compilation failure: Compilation failure: 
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/config/SecurityConfig.java:[4,33] cannot access com.votingsystem.security.UserDetailsServiceImpl
+[ERROR]   bad source file: E:\code\trial-voting-system\backend\src\main\java\com\votingsystem\security\UserDetailsServiceImpl.java
+[ERROR]     file does not contain class com.votingsystem.security.UserDetailsServiceImpl
+[ERROR]     Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/config/SecurityConfig.java:[35,19] cannot find symbol
+[ERROR]   symbol:   class UserDetailsServiceImpl
+[ERROR]   location: class com.votingsystem.config.SecurityConfig
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[38,30] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[39,36] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/JwtUtils.java:[40,38] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/AesAttributeConverter.java:[71,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.votingsystem.security.AesAttributeConverter
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/security/AesAttributeConverter.java:[102,13] cannot find symbol
+[ERROR]   symbol:   variable log
+[ERROR]   location: class com.votingsystem.security.AesAttributeConverter
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[35,59] cannot find symbol
+[ERROR]   symbol:   method getElectionState()
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[36,17] cannot find symbol
+[ERROR]   symbol:   method setElectionState(com.votingsystem.models.ElectionSettings.ElectionState)
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[37,17] cannot find symbol
+[ERROR]   symbol:   method setCountdownEndTime(java.time.LocalDateTime)
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[43,71] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[58,31] cannot find symbol
+[ERROR]   symbol:   method getApprovalStatus()
+[ERROR]   location: variable c of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[68,18] cannot find symbol
+[ERROR]   symbol:   method setApprovalStatus(com.votingsystem.models.Candidate.ApprovalStatus)
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[73,70] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[86,21] cannot find symbol
+[ERROR]   symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[88,21] cannot find symbol
+[ERROR]   symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[95,65] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[109,13] cannot find symbol
+[ERROR]   symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[114,52] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AdminService.java:[137,44] cannot find symbol
+[ERROR]   symbol:   method getElectionState()
+[ERROR]   location: class com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuditLogService.java:[34,34] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.votingsystem.models.AuditLog
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[37,17] cannot find symbol
+[ERROR]   symbol:   method getAccountStatus()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[40,17] cannot find symbol
+[ERROR]   symbol:   method getAccountStatus()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,17] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,31] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[45,52] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[46,39] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[53,17] cannot find symbol
+[ERROR]   symbol:   method setToken(java.lang.String)
+[ERROR]   location: variable response of type com.votingsystem.dto.AuthResponseDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[54,35] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[55,30] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[61,33] cannot find symbol
+[ERROR]   symbol:   method isRegistered()
+[ERROR]   location: variable entry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[62,20] incompatible types: java.lang.Object cannot be converted to boolean
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[67,84] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[70,27] cannot find symbol
+[ERROR]   symbol:   method isRegistered()
+[ERROR]   location: variable whitelistEntry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[74,53] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[78,25] cannot find symbol
+[ERROR]   symbol:   method builder()
+[ERROR]   location: class com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[79,31] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[80,57] cannot find symbol
+[ERROR]   symbol:   method getPassword()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[83,31] cannot find symbol
+[ERROR]   symbol:   method getFirstName()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[84,30] cannot find symbol
+[ERROR]   symbol:   method getLastName()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[85,30] cannot find symbol
+[ERROR]   symbol:   method getBirthday()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[86,27] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable request of type com.votingsystem.dto.RegisterRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[93,43] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[101,17] cannot find symbol
+[ERROR]   symbol:   method getAccountStatus()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[105,54] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[108,13] cannot find symbol
+[ERROR]   symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[113,23] cannot find symbol
+[ERROR]   symbol:   method setRegistered(boolean)
+[ERROR]   location: variable whitelistEntry of type com.votingsystem.models.VoterWhitelist
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,17] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,31] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[117,52] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[118,46] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[128,43] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[136,54] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[143,13] cannot find symbol
+[ERROR]   symbol:   method setPasswordHash(java.lang.String)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,17] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,31] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[147,52] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/AuthService.java:[148,43] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[31,13] cannot find symbol
+[ERROR]   symbol:   method setOtpCode(java.lang.String)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[32,13] cannot find symbol
+[ERROR]   symbol:   method setOtpExpiry(java.time.LocalDateTime)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[35,26] cannot find symbol
+[ERROR]   symbol:   method getGmail()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[43,17] cannot find symbol
+[ERROR]   symbol:   method getOtpCode()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[43,46] cannot find symbol
+[ERROR]   symbol:   method getOtpExpiry()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[47,45] cannot find symbol
+[ERROR]   symbol:   method getOtpExpiry()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[51,31] cannot find symbol
+[ERROR]   symbol:   method getOtpCode()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[53,17] cannot find symbol
+[ERROR]   symbol:   method setOtpCode(<nulltype>)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/OtpService.java:[54,17] cannot find symbol
+[ERROR]   symbol:   method setOtpExpiry(<nulltype>)
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[44,21] cannot find symbol
+[ERROR]   symbol:   method getElectionState()
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[51,79] cannot find symbol
+[ERROR]   symbol:   method getPlatformText()
+[ERROR]   location: variable platformDto of type com.votingsystem.dto.CandidateProfileUpdateDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[53,77] cannot find symbol
+[ERROR]   symbol:   method getYoutubeEmbedUrl()
+[ERROR]   location: variable platformDto of type com.votingsystem.dto.CandidateProfileUpdateDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[54,18] cannot find symbol
+[ERROR]   symbol:   method setYoutubeEmbedUrl(java.lang.String)
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[55,18] cannot find symbol
+[ERROR]   symbol:   method setApprovalStatus(com.votingsystem.models.Candidate.ApprovalStatus)
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[61,68] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[72,22] cannot find symbol
+[ERROR]   symbol:   method getCandidate()
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[76,17] cannot find symbol
+[ERROR]   symbol:   method setAnswerText(java.lang.String)
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[77,17] cannot find symbol
+[ERROR]   symbol:   method setAnswerStatus(com.votingsystem.models.Question.AnswerStatus)
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/CandidateService.java:[83,67] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable question of type com.votingsystem.models.Question
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[53,12] cannot find symbol
+[ERROR]   symbol:   method setReceiptHash(java.lang.String)
+[ERROR]   location: variable dto of type com.votingsystem.dto.ReceiptVerificationDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[61,20] cannot find symbol
+[ERROR]   symbol:   method getAccountStatus()
+[ERROR]   location: variable user of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[70,21] cannot find symbol
+[ERROR]   symbol:   method getElectionState()
+[ERROR]   location: variable settings of type com.votingsystem.models.ElectionSettings
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[77,18] cannot find symbol
+[ERROR]   symbol:   method getAccountStatus()
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[81,38] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[84,42] cannot find symbol
+[ERROR]   symbol:   method getSelectedCandidateIds()
+[ERROR]   location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[89,17] cannot find symbol
+[ERROR]   symbol:   method setVoter(com.votingsystem.models.User)
+[ERROR]   location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[90,17] cannot find symbol
+[ERROR]   symbol:   method setCandidate(com.votingsystem.models.Candidate)
+[ERROR]   location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[91,39] cannot find symbol
+[ERROR]   symbol:   method getPosition()
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[92,17] cannot find symbol
+[ERROR]   symbol:   method setReceiptHash(java.lang.String)
+[ERROR]   location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[93,17] cannot find symbol
+[ERROR]   symbol:   method setIsAbstain(boolean)
+[ERROR]   location: variable vote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[96,45] cannot find symbol
+[ERROR]   symbol:   method getVoteCount()
+[ERROR]   location: variable candidate of type com.votingsystem.models.Candidate
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[100,22] cannot find symbol
+[ERROR]   symbol:   method getAbstainedPositions()
+[ERROR]   location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[101,45] cannot find symbol
+[ERROR]   symbol:   method getAbstainedPositions()
+[ERROR]   location: variable ballotDto of type com.votingsystem.dto.CastBallotRequestDto
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[103,28] cannot find symbol
+[ERROR]   symbol:   method setVoter(com.votingsystem.models.User)
+[ERROR]   location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[104,28] cannot find symbol
+[ERROR]   symbol:   method setPosition(java.lang.String)
+[ERROR]   location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[105,28] cannot find symbol
+[ERROR]   symbol:   method setIsAbstain(boolean)
+[ERROR]   location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[106,28] cannot find symbol
+[ERROR]   symbol:   method setReceiptHash(java.lang.String)
+[ERROR]   location: variable abstainVote of type com.votingsystem.models.Vote
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[111,14] cannot find symbol
+[ERROR]   symbol:   method setAccountStatus(com.votingsystem.models.User.AccountStatus)
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,22] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,37] cannot find symbol
+[ERROR]   symbol:   method getStudentId()
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[115,59] cannot find symbol
+[ERROR]   symbol:   method getRole()
+[ERROR]   location: variable voter of type com.votingsystem.models.User
+[ERROR] /E:/code/trial-voting-system/backend/src/main/java/com/votingsystem/services/VotingService.java:[121,19] cannot find symbol
+[ERROR]   symbol:   method setReceiptHash(java.lang.String)
+[ERROR]   location: variable receiptDto of type com.votingsystem.dto.VoteReceiptDto
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

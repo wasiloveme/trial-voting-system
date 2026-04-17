@@ -40,6 +40,7 @@
             0.12.x is the latest stable API (uses builder pattern).
         -->
         <jjwt.version>0.12.5</jjwt.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <!-- =========================================================== -->
@@ -158,7 +159,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>

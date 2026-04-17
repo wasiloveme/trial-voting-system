@@ -193,4 +193,25 @@ public class AuditLog {
      */
     @Column(name = "ip_address", length = 45) // 45 chars supports full IPv6 notation
     private String ipAddress;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public Long getActorId() { return actorId; }
+    public void setActorId(Long actorId) { this.actorId = actorId; }
+    public String getActorIdentifier() { return actorIdentifier; }
+    public void setActorIdentifier(String actorIdentifier) { this.actorIdentifier = actorIdentifier; }
+    public User.Role getActorRole() { return actorRole; }
+    public void setActorRole(User.Role actorRole) { this.actorRole = actorRole; }
+    public String getAction() { return action; }
+    public void setAction(String action) { this.action = action; }
+    public String getTargetEntity() { return targetEntity; }
+    public void setTargetEntity(String targetEntity) { this.targetEntity = targetEntity; }
+    public Long getTargetId() { return targetId; }
+    public void setTargetId(Long targetId) { this.targetId = targetId; }
+    public String getDetail() { return detail; }
+    public void setDetail(String detail) { this.detail = detail; }
+    public LocalDateTime getEventTimestamp() { return eventTimestamp; }
+    public void setEventTimestamp(LocalDateTime eventTimestamp) { this.eventTimestamp = eventTimestamp; }
+    public String getIpAddress() { return ipAddress; }
+    public void setIpAddress(String ipAddress) { this.ipAddress = ipAddress; }
 }

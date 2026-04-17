@@ -15,12 +15,14 @@ import java.time.LocalDateTime;
  * =============================================================================
  */
 @Service
-@RequiredArgsConstructor
 public class AuditLogService {
 
     private final AuditLogRepository auditLogRepository;
 
-    @SuppressWarnings("null")
+    public AuditLogService(AuditLogRepository auditLogRepository) {
+        this.auditLogRepository = auditLogRepository;
+    }
+
     public void log(
         Long       actorId,
         String     actorIdentifier,
@@ -31,17 +33,16 @@ public class AuditLogService {
         String     detail,
         String     ipAddress
     ) {
-        AuditLog entry = AuditLog.builder()
-            .actorId(actorId)
-            .actorIdentifier(actorIdentifier)
-            .actorRole(actorRole)
-            .action(action)
-            .targetEntity(targetEntity)
-            .targetId(targetId)
-            .detail(detail)
-            .eventTimestamp(LocalDateTime.now())
-            .ipAddress(ipAddress)
-            .build();
+        AuditLog entry = new AuditLog();
+        entry.setActorId(actorId);
+        entry.setActorIdentifier(actorIdentifier);
+        entry.setActorRole(actorRole);
+        entry.setAction(action);
+        entry.setTargetEntity(targetEntity);
+        entry.setTargetId(targetId);
+        entry.setDetail(detail);
+        entry.setEventTimestamp(LocalDateTime.now());
+        entry.setIpAddress(ipAddress);
 
         auditLogRepository.save(entry);
     }

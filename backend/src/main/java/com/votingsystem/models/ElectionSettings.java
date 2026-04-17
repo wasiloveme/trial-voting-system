@@ -36,14 +36,21 @@ public class ElectionSettings extends BaseAuditEntity {
     @Column(name = "academic_year", length = 20)
     private String academicYear;
 
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public ElectionState getElectionState() { return electionState; }
+    public void setElectionState(ElectionState electionState) { this.electionState = electionState; }
+    public java.time.LocalDateTime getCountdownEndTime() { return countdownEndTime; }
+    public void setCountdownEndTime(java.time.LocalDateTime countdownEndTime) { this.countdownEndTime = countdownEndTime; }
+    public String getElectionTitle() { return electionTitle; }
+    public void setElectionTitle(String electionTitle) { this.electionTitle = electionTitle; }
+    public String getAcademicYear() { return academicYear; }
+    public void setAcademicYear(String academicYear) { this.academicYear = academicYear; }
+
     public enum ElectionState {
         PRE_ELECTION,
         OPEN,
         PAUSED,
         CLOSED
-    }
-
-    public ElectionState getState() {
-        return this.electionState;
     }
 }

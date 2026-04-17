@@ -39,6 +39,19 @@ public class Question extends BaseAuditEntity {
     @Column(name = "answer_status", nullable = false, length = 30)
     private AnswerStatus answerStatus = AnswerStatus.UNANSWERED;
 
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public User getVoter() { return voter; }
+    public void setVoter(User voter) { this.voter = voter; }
+    public Candidate getCandidate() { return candidate; }
+    public void setCandidate(Candidate candidate) { this.candidate = candidate; }
+    public String getQuestionText() { return questionText; }
+    public void setQuestionText(String questionText) { this.questionText = questionText; }
+    public String getAnswerText() { return answerText; }
+    public void setAnswerText(String answerText) { this.answerText = answerText; }
+    public AnswerStatus getAnswerStatus() { return answerStatus; }
+    public void setAnswerStatus(AnswerStatus answerStatus) { this.answerStatus = answerStatus; }
+
     public enum AnswerStatus {
         UNANSWERED,
         PENDING_APPROVAL,
