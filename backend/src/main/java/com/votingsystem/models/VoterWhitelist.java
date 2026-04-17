@@ -103,4 +103,11 @@ public class VoterWhitelist extends BaseAuditEntity {
     @Builder.Default
     @Column(name = "is_registered", nullable = false)
     private boolean isRegistered = false;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getStudentId() { return studentId; }
+    public void setStudentId(String studentId) { this.studentId = studentId; }
+    public boolean isRegistered() { return isRegistered; }
+    public void setRegistered(boolean registered) { isRegistered = registered; }
 }

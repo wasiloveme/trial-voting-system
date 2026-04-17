@@ -29,17 +29,21 @@ import java.util.Base64;
  * upon reading. Uses AES-256 in GCM mode for authenticity and confidentiality.</li>
  * </ul>
  */
-@Slf4j
 @Converter
 @Component
-@RequiredArgsConstructor
 public class AesAttributeConverter implements AttributeConverter<String, String> {
+
+    private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(AesAttributeConverter.class);
 
     private static final String ALGORITHM = "AES/GCM/NoPadding";
     private static final int GCM_IV_LENGTH = 12;
     private static final int GCM_TAG_LENGTH = 128;
 
     private final SecurityProperties securityProperties;
+
+    public AesAttributeConverter(SecurityProperties securityProperties) {
+        this.securityProperties = securityProperties;
+    }
 
     // Use a secure random instance for IV generation
     private final SecureRandom secureRandom = new SecureRandom();

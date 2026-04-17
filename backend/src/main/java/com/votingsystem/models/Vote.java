@@ -148,4 +148,22 @@ public class Vote extends BaseAuditEntity {
      */
     @Column(name = "cast_timestamp", nullable = false, updatable = false)
     private LocalDateTime castTimestamp;
+
+    @Column(name = "is_abstain", nullable = false)
+    private boolean isAbstain = false;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public User getVoter() { return voter; }
+    public void setVoter(User voter) { this.voter = voter; }
+    public String getPosition() { return position; }
+    public void setPosition(String position) { this.position = position; }
+    public Candidate getCandidate() { return candidate; }
+    public void setCandidate(Candidate candidate) { this.candidate = candidate; }
+    public String getReceiptHash() { return receiptHash; }
+    public void setReceiptHash(String receiptHash) { this.receiptHash = receiptHash; }
+    public LocalDateTime getCastTimestamp() { return castTimestamp; }
+    public void setCastTimestamp(LocalDateTime castTimestamp) { this.castTimestamp = castTimestamp; }
+    public boolean getIsAbstain() { return isAbstain; }
+    public void setIsAbstain(boolean isAbstain) { this.isAbstain = isAbstain; }
 }

@@ -219,7 +219,48 @@ public class User extends BaseAuditEntity {
     private String mfaSecret;
 
     // =========================================================================
-    // SECTION 6: ENUMERATIONS (Inner Static Types)
+    // SECTION 6: MANUAL ACCESSORS (Lombok fallback)
+    // =========================================================================
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getStudentId() { return studentId; }
+    public void setStudentId(String studentId) { this.studentId = studentId; }
+    public String getPasswordHash() { return passwordHash; }
+    public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
+    public Role getRole() { return role; }
+    public void setRole(Role role) { this.role = role; }
+    public AccountStatus getAccountStatus() { return accountStatus; }
+    public void setAccountStatus(AccountStatus accountStatus) { this.accountStatus = accountStatus; }
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
+    public String getMiddleName() { return middleName; }
+    public void setMiddleName(String middleName) { this.middleName = middleName; }
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
+    public LocalDate getBirthday() { return birthday; }
+    public void setBirthday(LocalDate birthday) { this.birthday = birthday; }
+    public String getSection() { return section; }
+    public void setSection(String section) { this.section = section; }
+    public String getProgram() { return program; }
+    public void setProgram(String program) { this.program = program; }
+    public Integer getYearLevel() { return yearLevel; }
+    public void setYearLevel(Integer yearLevel) { this.yearLevel = yearLevel; }
+    public String getGmail() { return gmail; }
+    public void setGmail(String gmail) { this.gmail = gmail; }
+    public String getContactNumber() { return contactNumber; }
+    public void setContactNumber(String contactNumber) { this.contactNumber = contactNumber; }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+    public String getOtpCode() { return otpCode; }
+    public void setOtpCode(String otpCode) { this.otpCode = otpCode; }
+    public java.time.LocalDateTime getOtpExpiry() { return otpExpiry; }
+    public void setOtpExpiry(java.time.LocalDateTime otpExpiry) { this.otpExpiry = otpExpiry; }
+    public String getMfaSecret() { return mfaSecret; }
+    public void setMfaSecret(String mfaSecret) { this.mfaSecret = mfaSecret; }
+
+    // =========================================================================
+    // SECTION 7: ENUMERATIONS (Inner Static Types)
     // =========================================================================
 
     /**
